@@ -1,6 +1,3 @@
-body{
-  background-color:#031150 ;
-}
 .txt-footer{
   color:#fff;
   font-size: 20px;
@@ -13,7 +10,10 @@ body{
   font-size:20px;
 }
 .site-footer{
-background-color: #031150;
+  background-color: #0c1954;
+}
+.text-centre{
+  color: #0c1954;
 }
 .myloginbox{
     margin-top:5%;
@@ -22,34 +22,29 @@ background-color: #031150;
 }
 .alert-danger {
     padding: 20px;
-    color:  #f44336;
+    color:  #0c1954;
     margin-top:-5%;
     text-align: center;
   }
-  
  .mybtn{
     border: none;
-    background: #ffaa3c;
+    background:#0c1954;
     margin:3px;
     border-radius: 3px;
     color: white;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
  }
-  
  .mybtn1{
     border: none;
     margin:3px;
     border-radius: 0px;
-    color: #ffaa3c;
+    color: #0c1954;
     margin-top:5px;
     background-color: white;
  }
-
- 
- 
  .mybtn2{
     border: none;
-    background: #ffaa3c;
+    background: #0c1954;
     margin:3px;
     border-radius: 3px;
     color: white;
@@ -61,7 +56,7 @@ background-color: #031150;
  }
  .mybtn3{
   border: none;
-  background: #ffaa3c;
+  background: #0c1954;
   margin:3px;
   border-radius: 3px;
   color: white;
@@ -76,7 +71,7 @@ background-color: #031150;
     text-align: center;
  }
  .cl-pm{
-    color: #ffaa3c;
+    color: #0c1954;
  }
  .mymovie-box{
     width:100%;
@@ -109,13 +104,13 @@ background-color: #031150;
     right: 10px;
     padding: 5px 10px;
     border-radius: 50%;
-    background-color:  #ffaa3c;
+    background-color:  #0c1954;
     color: white;
   }
   .badge:hover{
     background-color: white;
-    color:  #ffaa3c;
-    border-color:#ffaa3c;
+    color:  #0c1954;
+    border-color:#0c1954;
   }
   .card-wi{
     margin-left:30px;
@@ -130,7 +125,7 @@ background-color: #031150;
     margin-left:20px;
   }
   .checked {
-    color: orange;
+    color: #0c1954;
   }
   .rating{
     margin-top:-15px;
@@ -145,11 +140,11 @@ background-color: #031150;
   }
   .rating2{font-size: 30px;
      margin-left:-5px;
-     color: orange;
+     color: #0c1954;
      }
      .rating2 h1{font-size: 30px;
       margin-left:-5px;
-      color: orange;
+      color: #0c1954;
       }
     .tl{
       margin-bottom:50px;
@@ -161,7 +156,7 @@ background-color: #031150;
     }
     .review-box{
       border-radius: 3px;
-      border-color: #ffaa3c;
+      border-color: #0c1954;
     }
     .test-img{
       width:auto;

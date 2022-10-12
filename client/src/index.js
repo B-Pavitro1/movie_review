@@ -11,6 +11,7 @@ import UserLogin from './Component/userlogin'
 import { combineReducers } from 'redux';
 import { sessionReducer } from 'react-session';
 import Footer from './Component/footer'
+import TopMovies from './Component/topmovies'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/AddMovie" element={<AddMovie/>} />
           <Route path="/AdminDash" element={<Admindash/>} />
           <Route path="/SignUp" element={<Signup/>} />
+          <Route path="/TopMovies" element={<TopMovies/>} />
           <Route path="/AdminReview" element={<AdminReview/>}/>
           <Route path="/Login" element={<UserLogin/>} />
         </Route>

@@ -232,7 +232,14 @@ app.get('/mymovies', (req, res) => {
          res.send(results);
     });
 });
+
 //rating details 
+app.get('/mymovies1', (req, res) => {
+    db.query("SELECT * FROM movie order by rating desc limit 10", (err, results, fields) => {
+      if(err) throw err;
+         res.send(results);
+    });
+});
 
 //get movie id
 var mid = 0;

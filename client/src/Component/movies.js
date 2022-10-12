@@ -113,7 +113,7 @@ if(critic >=3){
 
                   </div>
                   <ul class="movie-meta">
-                    <li><strMessageong>Rating: {x/count} out of 10 </strMessageong>
+                    <li><strMessageong>Rating: {parseInt(x/count)} out of 10 </strMessageong>
 
                    
                     </li>

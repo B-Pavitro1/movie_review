@@ -58,7 +58,13 @@ export default function Home() {
                                 <div className="col-lg-3">
                                     <div class="card mymovie-box ">
                                         <p class="notification">
-                                            <img src={item.url} class="card-img-top img-height " alt="..." />
+                                            <img src={item.url} class="card-img-top img-height" onClick={() => review(item.sl,
+                                                        item.name,
+                                                        item.url,
+                                                        item.rating,
+                                                        item.year,
+                                                        item.language,
+                                                        item.genre)} alt="..." />
                                             <span class="badge">{item.genre}
                                             </span>
                                         </p>

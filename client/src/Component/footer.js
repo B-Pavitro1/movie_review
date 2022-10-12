@@ -8,7 +8,7 @@ export default function footer() {
                 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      <span class="txt-footer">Movie-Review-App.com , @ Developed for Mr.Cooper 2022</span>
+      <span class="txt-footer">Movie-Review-App.com , @ Project for Mr.Cooper 2022</span>
     </div>
     <div class="col-md-6">
       <span class="nav-footer">

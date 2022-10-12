@@ -66,6 +66,7 @@ export default function Home() {
                                                         item.language,
                                                         item.genre)} alt="..." />
                                             <span class="badge">{item.genre}
+                                    
                                             </span>
                                         </p>
                                         <div class="rating">

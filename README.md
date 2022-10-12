@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Movie-Rating-Web
  A React WebPagge to Rate and Review Movies
 # Server 
@@ -32,3 +33,6 @@
   4) git push origin 
 
   
+=======
+Readdme.me
+>>>>>>> 2461ebbd301cb9ecaec0448969533b79418df402

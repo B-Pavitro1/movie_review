@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 import Axios from 'axios';
 import Rating from './Rating'
 import './mystyle.css'
+import AdminReview from '../Layout/admin/adminreview';
 Axios.defaults.withCredentials = true;
 
 function Form() {
@@ -15,11 +16,7 @@ function Form() {
   if (session=='null') {
     return (
       <>
-        <h5>Please Login to Submit Your Review</h5>
-        <Link to="/Login">   <button class="mybtn3">Login</button></Link>
-        <span class="text-center"> or</span>
-        <Link to="/Signup">   <button class="mybtn3">Signup</button></Link>
-        <Outlet />
+      
       </>
     )
   } else {
@@ -73,7 +70,7 @@ useEffect(() => {
 if(critic >=3){
   strMessage="Critic Review"}
   else{
-    strMessage="Give a Review"
+    strMessage=""
   }
 //calculate rating
 {data.map((item2) => {if(location.state.id==item2.movie_id){
@@ -106,6 +103,7 @@ if(critic >=3){
                   <figure class="movie-poster"><img class="imgsize"src={location.state.url} alt="#" /></figure>
                 </div>
                 <div class="col-md-6">
+                <div class="row">
                   <h2 class="movie-title">{location.state.name}</h2>
                   <div class="movie-summary">
 
@@ -124,14 +122,10 @@ if(critic >=3){
                   <ul class="starring">
                 
                     <h3>{strMessage}</h3>
-
-                    <Form />
                     
                   </ul>
-                </div>
-
-              </div>
-              <div class="row">  
+                  </div>
+                  <div class="row">  
               <h2>User Reviews</h2>
               <hr></hr>
               {//review by user for movie
@@ -141,27 +135,26 @@ if(critic >=3){
                 <div class="row">
                      <div class=" review-box ">
                              <h4>{item.user_id} Says</h4>
-                        <div class="col-lg-3">
+                        <div class="col-lg-6">
                             <img class="test-img"src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" />
                         </div>
-                        <div class="col-lg-9">
+                        <div class="col-lg-6">
                             <span>{item.rating}/10</ span> 
                             <p>{item.value}</p>
                        </div>
                       </div>  
                     </div>           
-                    
               </div> 
                )}
                }
               )}
               </div>
+                </div>
+              </div>    
             </div>
           </div>
         </div>
       </div>
     </>
-
   )
-
 }

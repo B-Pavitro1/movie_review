@@ -12,6 +12,7 @@ import { combineReducers } from 'redux';
 import { sessionReducer } from 'react-session';
 import Footer from './Component/footer'
 import TopMovies from './Component/topmovies'
+import TopReview from './Component/topreview'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route>
          <Route index element={<Home />} />
+         <Route path="/TopReview" element={<TopReview/>} />
           <Route path="/Movies" element={<Movies/>} />
           <Route path="/AddMovie" element={<AddMovie/>} />
           <Route path="/AdminDash" element={<Admindash/>} />

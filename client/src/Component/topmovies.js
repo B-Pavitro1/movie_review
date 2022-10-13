@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../Component/header'
 import Carousel from 'react-bootstrap/Carousel'
-
-
 import { useNavigate } from "react-router-dom";
 export default function Home() {
     const nav = useNavigate();
     const [data, setData] = useState([]);
     const review = (id, name, url, rating, year, language, genre) => {
-        nav('/Movies', {
+        nav('/TopReview', {
             state: {
                 id: id, name: name,
                 url: url,

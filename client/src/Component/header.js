@@ -50,11 +50,10 @@ function MyLinks() {
 		return (
 			<>
 			<div class="nav-header">
-				<li class="menu-item "> <span>  |</span>  Welcome Admin</li>
+				
 				<li class="menu-item ">  <Link to="/"> Home</Link></li>
 				<li class="menu-item"><Link to="/AddMovie">Add Movies</Link></li>
 				<li class="menu-item"><Link to="/AdminReview">Reviews</Link></li>
-				<li class="menu-item"><Link to="/Users">Users</Link></li>
 				<li class="menu-item ">  <Link to="/TopMovies"> Top 10 Movies</Link></li>
 				<li class="menu-item">
 					<input type="button"

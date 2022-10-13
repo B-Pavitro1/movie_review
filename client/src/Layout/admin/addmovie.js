@@ -1,11 +1,8 @@
-
 import Header from '../../Component/header'
 import {useState} from 'react'
 import Axios from 'axios';
 import React from 'react'
-
 import { BrowserRouter, Routes, Redirect, router } from "react-router-dom";
-
 import { useNavigate } from "react-router-dom";
 function AddMovie(){
     
@@ -71,7 +68,7 @@ Axios.defaults.withCredentials = true;
                                 required />
                                 <input type="text"
                                 name="genre"
-                                placeholder="genre"
+                                placeholder="Genre"
                                 onChange={(e) => setgenre(e.target.value)}
                                 required />
                                  <input type="text"

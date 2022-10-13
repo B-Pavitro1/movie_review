@@ -1,9 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from '../Component/header'
 import Carousel from 'react-bootstrap/Carousel'
-
-
 import { useNavigate } from "react-router-dom";
 export default function Home() {
     const nav = useNavigate();
